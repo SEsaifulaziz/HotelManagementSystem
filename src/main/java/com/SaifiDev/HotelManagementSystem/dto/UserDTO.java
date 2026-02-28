@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class UserDto {
+public class UserDTO {
 
     private Long id;
     private String email;
