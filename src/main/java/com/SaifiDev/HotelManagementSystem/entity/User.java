@@ -35,6 +35,7 @@ public class User implements UserDetails {
     private String phoneNumber;
 
     private String role;
+
     private List<Booking> bookings = new ArrayList<>();
 
     @Override
