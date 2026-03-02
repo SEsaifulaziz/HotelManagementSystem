@@ -36,6 +36,7 @@ public class User implements UserDetails {
 
     private String role;
 
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Booking> bookings = new ArrayList<>();
 
     @Override

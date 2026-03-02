@@ -11,19 +11,12 @@ import org.joda.time.LocalDate;
 public class BookingDTO {
 
     private Long id;
-
     private LocalDate checkInDate;
-
     private LocalDate checkOutDate;
-
     private int numOfAdults;
-
     private int numOfChildren;
-
     private String bookingConfirmation;
-
     private User user;
-
     private Room room;
 
 }
