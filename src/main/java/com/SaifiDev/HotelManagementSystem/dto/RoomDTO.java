@@ -16,6 +16,6 @@ public class RoomDTO {
     private String name;
     private String phoneNumber;
     private String role;
-    private List<Booking> bookings;
+    private List<BookingDTO> bookings;
 
 }
