@@ -12,10 +12,10 @@ import java.util.List;
 public class RoomDTO {
 
     private Long id;
-    private String email;
-    private String name;
-    private String phoneNumber;
-    private String role;
+    private String roomType;
+    private String roomPrice;
+    private String roomPhotoUrl;
+    private String roomDescription;
     private List<BookingDTO> bookings;
 
 }
