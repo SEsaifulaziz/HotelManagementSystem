@@ -1,10 +1,7 @@
 package com.SaifiDev.HotelManagementSystem.utils;
 
-import com.SaifiDev.HotelManagementSystem.dto.UserDTO;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +14,6 @@ import java.util.function.Function;
 
 @Service
 public class JWTUtils {
-
-
 
     private static final long EXPIRATION_TIME = 1000 * 60 * 24 * 7; //for 7 days
 
@@ -34,7 +29,7 @@ public class JWTUtils {
         return Jwts.builder()
                 .subject(userDetails.getUsername())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis()))
+                .expiration(new Date(System.currentTimeMillis()  + EXPIRATION_TIME))
                 .signWith(Key)
                 .compact();
     }
